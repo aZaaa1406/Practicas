@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+.barraSup{
+    background-color: rgb(73, 73, 73);
+}
+.boton{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 30px;
+    color: white;
+    border: 3px;
+    border-color: black;
+    background-color: rgb(73, 73, 73);
+}
+.boton:hover{
+    background-color: black;
+}

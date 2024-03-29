@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de formulario</title>
+    <script src="./js/for.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <form method="post" name="formulario" action="" onsubmit="return validar(this)">
+                <p>
+                    todos los formularios en web manejan
+                    metodos para el envio de diferentes peticiones que realiza el usuario.
+                    Debemos recordar que la mayoria de ñas aplicaciones web trabajan sobre una arquitectura cliente servidor.
+                    Significa que el cliente realiza una peticion(request) y el sevidor debe de atender mediante una respuesta(response)
+                    Los metodos mas comunes son:
+                    Get: <h1>Este metodo se encarga de 
+                        enviar la informacion del formualrio por meduio de la salida url 
+                        estandar del navegador, esto propicia que pueda 
+                        existir inyecciones de codigorealizado
+                        violaciones a la seguridad del sistema.
+                    </h1>
+                    POST: <h1>Este metodo se encarga de enviar la informacion igual por el metodo estandar;
+                         pero mediante el ocultamiento, esto significa que no es visible
+                        para el usuario. Lo que nos oifrece un mayor grado de seguirad en el
+                         manejo del sistema.
+                    </h1>
+                    GET solo se uso para operaciones de lectura
+                    POST se usa para cambiar la informacion de un recurso por parte del servidor(insertar un regfistro)
+                    DELETE sirve para eliminar un recurso en especifico.
+                    PUT almacena la informacion de un recurso particular para su actualizacion.
+                    HEAD regresa el codigo de respuesta y cualquier cabezera HTTP asociada.
+                </p>
+                <label>Nombre:</label>
+                <br>
+                <input type="text"  name="nombre" id="nombre">
+                <br>
+                <label>Edad:</label>
+                <br>
+                <input type="number" name="edad" id="edad">
+                <br>
+                <label >correo: </label>                                    
+                <br>
+                <input type="text" name="correo" id="correo">
+                <br>
+                <input type="submit" name="enviar" value="enviar registro">
+                <br>
+                <input type="reset" name="borrar" value="borrar datos">
+                <br>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ejercicio1.css">
+    <link rel="stylesheet" href="Css/ejerciciosJs.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barraSup">
+            <button class="boton">
+                Inicio
+            </button>
+            <button class="boton">
+                Ejercicio 1
+            </button>
+            <button class="boton">
+                Ejercico 2
+            </button>
+            <button class="boton">
+                Ejercicio 3
+            </button>
+            <button class="boton">
+                Ejercicio 4
+            </button>
+            <button class="boton">
+                Ejercicio 5
+            </button>
+            <button class="boton">
+                Ejercico 6
+            </button>
+        </div>
+        <div class="info">
+            <h2>Calculadora de Inversio</h2>
+            <br>
+            <p>Ingresa el capital a invertir, recuerda que la tasa de inversion es de 2% </p>
+        </div>
+        <div class="formulario">
+            <form method="post" name="formulario" action="" onsubmit="return validar(this)" onreset="return limpiar(this)">
+                <label>Ingrese su capital </label>
+                <br>
+                <input type="number"  name="capital" id="capital">
+                <br>
+                <input type="submit" value="Calcular">
+                <br>
+                <label>Su capital despues de un mes es:</label>
+                <br>
+                <h3 id="resultado"></h3>
+                <br>
+                <input type="reset" name="reset" value="Volver a calcular">
+            </form>
+        </div>
+    </div>
+    <script src="js/Ejercicio1.js"></script>
+</body>
+</html>
