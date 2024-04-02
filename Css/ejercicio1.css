@@ -15,4 +15,8 @@
     border-radius: 5px;
     margin: 10px;
     color: white;
+    height: 30px;
+}
+.formulario h3{
+    margin: 10px;
 }

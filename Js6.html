@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ejercicio6.css">
+    <link rel="stylesheet" href="Css/ejerciciosJs.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="barraSup">
+            <button class="boton" onclick="location.href='ejerciciosJs.html'">
+                Inicio
+            </button>
+            <button class="boton">
+                Ejercicio 1
+            </button>
+            <button class="boton">
+                Ejercico 2
+            </button>
+            <button class="boton">
+                Ejercicio 3
+            </button>
+            <button class="boton" onclick="location.href='Js4.html'">
+                Ejercicio 4
+            </button>
+            <button class="boton">
+                Ejercicio 5
+            </button>
+            <button class="boton">
+                Ejercico 6
+            </button>
+        </div>
+        <div class="info">
+            <h1>Bienvenido</h1>
+            <br>
+            <p>
+                Esta es una calculadora de edad, deberá ingresar su fecha de nacimientoy el programa le retornara
+                su edad
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="" method="post" onsubmit="return calculo(this)" id="formulario" name="formulario" onreset="return limpiar(this)">
+                <label for="">Ingrese su fecha de nacimiento</label>
+                <input type="date" id="fechaNacimiento" min="1920-01-01" max="2024-12-31">
+                <br>
+                <input type="submit" value="Calcular">
+                <input type="reset" value="Volver a calcular">
+                <br>
+                <h3 id="edad"></h3>
+            </form>
+        </div>
+    </div>
+    <script src="js/Ejercicio6.js"></script>
 </body>
 </html>

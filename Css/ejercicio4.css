@@ -1,0 +1,17 @@
+.info{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.formulario{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font: 30px;
+    color: beige;
+}
+.formulario label, input{
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
