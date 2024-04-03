@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ejerciciosJs.css">
+    <link rel="stylesheet" href="Css/ejercicio2.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barraSup">
+            <button class="boton" onclick="location.href='Js1.html'">
+                Ejercicio 1
+            </button>
+            <button class="boton" onclick="location.href='Js2.html'">
+                Ejercico 2
+            </button>
+            <button class="boton" onclick="location.href='Js3.html'">
+                Ejercicio 3
+            </button>
+            <button class="boton" onclick="location.href='Js4.html'">
+                Ejercicio 4
+            </button>
+            <button class="boton" onclick="location.href='Js5.html'">
+                Ejercicio 5
+            </button>
+            <button class="boton" onclick="location.href='Js6.html'">
+                Ejercico 6
+            </button>
+        </div>
+        <div class="info">
+            <h2>Comisiones vendedor</h2>
+            <br>
+            <p>
+                Esta es una calculadora en la que podrá saber el concepto por comision de sus 3 ventas
+                en el mes, así como el sueldo recibido en total
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="" name="formulario" method="post" onsubmit="return validar(this)" onreset="return limpiar(this)">
+            <label >Sueldo base</label>
+            <input type="number" min="0" name="suledoB" id="sueldoB">
+            <br>
+            <label>Venta 1</label>
+            <input type="number" min="0" name="venta1" id="venta1">
+            <br>
+            <label>Venta 2</label>
+            <input type="number" min="0" name="venta2" id="venta2">
+            <br>
+            <label>Venta 3</label>
+            <input type="number" min="0" name="venta3" id="venta3">
+            <br>
+            <input type="submit" >
+            <input type="reset" name="" id="">
+            </form>
+            <h3 id="comisiones"></h3>
+            <h3 id="resultado"></h3>
+            
+        </div>
+    </div>
+    <script src="js/ejercicio2.js"></script>
+</body>
+</html>

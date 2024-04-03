@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ejerciciosJs.css">
+    <link rel="stylesheet" href="Css/ejercicio5.css">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barraSup">
+            <button class="boton" onclick="location.href='Js1.html'">
+                Ejercicio 1
+            </button>
+            <button class="boton" onclick="location.href='Js2.html'">
+                Ejercico 2
+            </button>
+            <button class="boton" onclick="location.href='Js3.html'">
+                Ejercicio 3
+            </button>
+            <button class="boton" onclick="location.href='Js4.html'">
+                Ejercicio 4
+            </button>
+            <button class="boton" onclick="location.href='Js5.html'">
+                Ejercicio 5
+            </button>
+            <button class="boton" onclick="location.href='Js6.html'">
+                Ejercico 6
+            </button>
+        </div>
+        <div class="info">
+            <h1>Porcentajes hombres y mujeres</h1>
+            <br>
+            <p>
+                Ingrese el numero total de alumnos y el numero de hombres y mujeres para conocer el porcentaje 
+                de los mismos.
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="" id="formulario" name="formulario" onsubmit="return validar(this)" method="post" onreset="return limpiar(this)">
+                <label for="">Ingrese el numero de alumnos</label>
+                <input type="number" min="0" id="total" name="total">
+                <br>
+                <label for="">Ingrese el numero de hombres</label>
+                <input type="number" name="hombres" id="hombres">
+                <br>
+                <label for="">Ingrese el numero de mujeres</label>
+                <input type="number" name="mujeres" id="mujeres">
+                <br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="restablecer">
+                <br>
+                <h3 id="resultadoH"></h3>
+                <h3 id="resultadoM"></h3>
+
+            </form>
+        </div>
+    </div>
+    <script src="js/ejercicio5.js"></script>
+</body>
+</html>

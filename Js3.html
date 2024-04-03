@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ejerciciosJs.css">
+    <link rel="stylesheet" href="Css/ejercicio3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barraSup">
+            <button class="boton" onclick="location.href='Js1.html'">
+                Ejercicio 1
+            </button>
+            <button class="boton" onclick="location.href='Js2.html'">
+                Ejercico 2
+            </button>
+            <button class="boton" onclick="location.href='Js3.html'">
+                Ejercicio 3
+            </button>
+            <button class="boton" onclick="location.href='Js4.html'">
+                Ejercicio 4
+            </button>
+            <button class="boton" onclick="location.href='Js5.html'">
+                Ejercicio 5
+            </button>
+            <button class="boton" onclick="location.href='Js6.html'">
+                Ejercico 6
+            </button>
+        </div>
+        <div class="info">
+            <h1>Tienda</h1>
+            <br>
+            <p>
+                Ingrese el monto de su compra en el que se le aplicará el 15% de descuento
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="" id="formulario" name="formulario" onsubmit="return validar(this)" method="post" onreset="return limpiar(this)">
+                <label for="">Ingrese el monto de su compra</label>
+                <input type="number" name="monto" id="monto">
+                <br>
+                <input type="submit">
+                <input type="reset">
+                <br>
+                <h3 id="resultado"></h3>
+            </form>
+        </div>
+    </div>
+    <script src="js/ejercicio3.js"></script>
+</body>
+</html>

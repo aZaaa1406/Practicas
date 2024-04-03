@@ -21,3 +21,8 @@
 .boton:hover{
     background-color: black;
 }
+.info{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
